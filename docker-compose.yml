@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  gui-vue-project-manager:
+    container_name: gui-vue-project-manager
+    build: .
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./projects:/srv:rw
+    ports:
+      - ${UI_PORT-8000}:8000
