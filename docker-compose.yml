@@ -9,3 +9,4 @@ services:
       - ./projects:/srv:rw
     ports:
       - ${UI_PORT-8000}:8000
+      - ${SERVE_PORT-8080}:8080
