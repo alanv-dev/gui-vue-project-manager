@@ -7,4 +7,3 @@ http://localhost:8000/
 ```
 docker-compose up -d --build
 ```
-```
